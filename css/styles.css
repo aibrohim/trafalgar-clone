@@ -1,0 +1,369 @@
+/* =============== CONTENTS =============== */
+/* FONTS */
+/* BOX-SIZING */
+/* GLOBAL STYLES */
+/* HELPER / GLOBAL COMPONENTS */
+/* MEDIA QUERIES */
+
+
+
+/*------------------------------------*\
+  #FONT-FACE
+\*------------------------------------*/
+
+/* mulish-300 - latin */
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/mulish-v1-latin-300.woff2") format("woff2"),
+    url("../fonts/mulish-v1-latin-300.woff") format("woff");
+}
+
+/* mulish-regular - latin */
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/mulish-v1-latin-regular.woff2") format("woff2"),
+    url("../fonts/mulish-v1-latin-regular.woff") format("woff");
+}
+
+/* mulish-700 - latin */
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/mulish-v1-latin-700.woff2") format("woff2"),
+    url("../fonts/mulish-v1-latin-700.woff") format("woff");
+}
+
+
+/*------------------------------------*\
+  #BOX-SIZING
+\*------------------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+
+/*------------------------------------*\
+  #GLOBAL-STYLES
+\*------------------------------------*/
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Mulish", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #7D7987;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.black-text {
+  color: #000;
+}
+
+.button {
+  padding: 20px 40px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  border-radius: 55px;
+  transition: box-shadow 0.3s ease;
+}
+
+.button:hover {
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.6);
+}
+
+
+
+/*------------------------------------*\
+  #HELPER / GLOBAL COMPONENTS
+\*------------------------------------*/
+
+/* VISUALLY HIDING CODE */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* CONTAINER */
+
+.container {
+  max-width: 1240px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* MAIN STYLES */
+
+.site-header {
+  background-color: #fff;
+  margin-bottom: 70px;
+}
+
+.sitenav {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: inline-block;
+  margin-right: auto;
+  flex-shrink: 1;
+  transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+  opacity: 0.7;
+}
+
+.logo:active {
+  opacity: 0.5;
+}
+
+.logo__img {
+  display: block;
+}
+
+.sitenav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.sitenav__item {
+  margin-left: 40px;
+}
+
+.sitenav__link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1F1534;
+  opacity: 0.5;
+}
+
+.sitenav__link:hover {
+  opacity: 1;
+}
+
+.sitenav__link:active {
+  color: #458FF6;
+}
+
+.active .sitenav__link {
+  font-weight: bold;
+  opacity: 1;
+}
+
+.toggler {
+  display: none;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: none;
+  background-image: url("../img/open.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  outline: none;
+}
+
+.intro {
+  margin-bottom: 110px;
+}
+
+.intro__container {
+  padding-top: 132px;
+  padding-bottom: 132px;
+  background-image: url("../img/intro-img.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.intro__info {
+  max-width: 440px;
+}
+
+.intro__heading {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.intro__text {
+  margin: 0;
+  margin-bottom: 48px;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 32px;
+}
+
+.intro__link {
+  color: #fff;
+  background-color: #458ff6;
+}
+
+@media only screen and (max-width:1170px) {
+  .intro__container {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-size: 550px;
+  }
+
+  .intro__info {
+    max-width: 400px;
+  }
+
+  .intro__heading {
+    margin-bottom: 20px;
+    font-size: 42px;
+    line-height: 52px;
+  }
+
+  .intro__text {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+@media only screen and (max-width:960px) {
+
+  .intro__container {
+    padding-top: 500px;
+    padding-bottom: 0;
+    background-size: 550px;
+    background-position: center top;
+  }
+
+  .intro__info {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width:800px) {
+  .sitenav__item {
+    margin-left: 25px;
+  }
+}
+
+@media only screen and (max-width:768px) { 
+  body {
+    padding-top: 77px;
+  }
+
+  .site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .sitenav {
+    position: relative;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #efefef;
+  }
+
+  .sitenav__list {
+    display: none;
+  }
+
+  .toggler {
+    display: inline-block;
+  }
+
+  .toggler__close {
+    background-image: url("../img/close.svg");
+  }
+
+  .open-js .sitenav__list {
+    display: block;
+    position: absolute;
+    padding: 15px 0;
+    top: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .open-js .sitenav__item {
+    margin-left: 0;
+  }
+
+  .open-js .sitenav__link {
+    padding: 10px 0;
+  }
+}
+
+@media only screen and (max-width:585px) {
+  .intro__container {
+    padding-top: 370px;
+    background-size: 400px;
+    background-position: center top;
+  }
+}
+
+@media only screen and (max-width:430px) {
+  .intro__container {
+    padding-top: 270px;
+    background-size: 300px;
+    background-position: center top;
+  }
+
+  .intro__info {
+    text-align: center; 
+  }
+
+  .intro__heading {
+    margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .intro__text {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
