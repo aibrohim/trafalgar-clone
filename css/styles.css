@@ -90,9 +90,17 @@ img {
 }
 
 .button:hover {
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
 }
 
+.hr {
+  margin: 0;
+  width: 56px;
+  height: 2px;
+  border: none;
+  background: #000000;
+  border-radius: 5px;
+}
 
 
 /*------------------------------------*\
@@ -123,6 +131,9 @@ img {
 }
 
 /* MAIN STYLES */
+
+
+/* SITE HEADER */
 
 .site-header {
   background-color: #fff;
@@ -172,6 +183,7 @@ img {
   line-height: 23px;
   color: #1F1534;
   opacity: 0.5;
+  transition: opacity 0.3s ease;
 }
 
 .sitenav__link:hover {
@@ -199,6 +211,9 @@ img {
   cursor: pointer;
   outline: none;
 }
+
+
+/* SITE INTRO */
 
 .intro {
   margin-bottom: 110px;
@@ -236,6 +251,83 @@ img {
   color: #fff;
   background-color: #458ff6;
 }
+
+.intro__link:hover {
+  background-color: #307ce6;
+}
+
+
+/* SERVICES SECTION */
+
+.services__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 952px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.services__heading {
+  margin: 0;
+  margin-bottom: 26px;
+  font-size: 36px;
+  line-height: 56px;
+}
+
+.services__text {
+  margin: 0;
+  margin-top: 33px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.services__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.services__link {
+  position: relative;
+  z-index: 1;
+  padding: 54px 45px 46px 39px;
+  display: inline-block;
+  width: 350px;
+  text-decoration: none;
+  background-color: #fff;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  border-radius: 20px;
+}
+
+.services__link::before {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  width: 92px;
+  height: 95px;
+  content: "";
+  background-image: url("../img/");
+}
+
+.service__name {
+  margin: 0;
+  font-size: 24px;
+  line-height: 56px;
+}
+
+.service__info-text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #7D7987;
+}
+
+/* MEDIA QUERIES */
 
 @media only screen and (max-width:1170px) {
   .intro__container {
