@@ -401,6 +401,10 @@ img {
 
 /* PROVIDERS SECTION */
 
+.providers {
+  margin-bottom: 260px;
+}
+
 .providers__container {
   padding-top: 70px;
   padding-bottom: 50px;
@@ -454,6 +458,10 @@ img {
     font-size: 18px;
     line-height: 32px;
   }
+
+  .providers__container {
+    background-size: 550px;
+  }
 }
 
 @media only screen and (max-width:960px) {
@@ -461,11 +469,24 @@ img {
   .intro__container {
     padding-top: 500px;
     padding-bottom: 0;
-    background-size: 550px;
     background-position: center top;
   }
 
   .intro__info {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .services {
+    margin-bottom: 100px;
+  }
+
+  .providers__container {
+    padding-top: 450px;
+    background-position: center top;
+  }
+
+  .providers__info {
     margin-left: auto;
     margin-right: auto;
   }
@@ -547,6 +568,11 @@ img {
   .services__link {
     max-width: 380px;
   }
+
+  .providers__container {
+    padding-top: 370px;
+    background-size: 400px;
+  }
 }
 
 @media only screen and (max-width:430px) {
@@ -570,5 +596,35 @@ img {
     margin-bottom: 40px;
     font-size: 16px;
     line-height: 25px;
+  }
+
+  .services {
+    margin-bottom: 60px;
+  }
+
+  .providers__container {
+    padding-top: 270px;
+    background-size: 300px;
+  }
+
+  .providers__info {
+    text-align: center; 
+  }
+
+  .providers__heading {
+    margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .providers__text {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .hr {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
