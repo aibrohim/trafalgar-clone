@@ -522,10 +522,6 @@ img {
     border-bottom: 1px solid #efefef;
   }
 
-  .sitenav__list {
-    display: none;
-  }
-
   .toggler {
     display: inline-block;
   }
@@ -534,28 +530,55 @@ img {
     background-image: url("../img/close.svg");
   }
 
+  .sitenav__list {
+    display: block;
+    position: absolute;
+    padding: 15px 0;
+    top: 101%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: #f1f1f1;
+    clip-path: circle(100px at 90% -25%);
+    transition: all 0.8s ease-out;
+  }
+
   .open-js .sitenav__list {
     display: block;
     position: absolute;
     padding: 15px 0;
-    top: 130%;
+    top: 101%;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%;
+    width: 100%;
+    height: 100vh;
     text-align: center;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+    background-color: #f1f1f1;
+    clip-path: circle(1000px at 90% -25%);
+    transition: all 0.8s ease-out;
   }
 
-  .open-js .sitenav__item {
+  .sitenav__item {
     margin-left: 0;
   }
 
-  .open-js .sitenav__link {
-    padding: 10px 0;
+  .sitenav__link {
+    margin: 10px 0;
+    padding: 5px 0;
+    font-size: 22px;
   }
 
+  .open-js .sitenav__link {
+    margin: 10px 0;
+    padding: 5px 0;
+    font-size: 22px;
+  }
+
+  .services {
+    background-image: none;
+  }
 }
 
 @media only screen and (max-width:585px) {
