@@ -565,14 +565,14 @@ img {
   }
 
   .sitenav__link {
-    margin: 20px 0;
+    margin: 10px 0;
     padding: 10px 0;
     font-size: 22px;
   }
 
   .open-js .sitenav__link {
     margin: 10px 0;
-    padding: 5px 0;
+    padding: 10px 0;
     font-size: 22px;
   }
 
