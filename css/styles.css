@@ -48,6 +48,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -402,7 +403,7 @@ img {
 /* PROVIDERS SECTION */
 
 .providers {
-  margin-bottom: 260px;
+  margin-bottom: 190px;
 }
 
 .providers__container {
@@ -429,6 +430,38 @@ img {
   margin: 0;
   margin-bottom: 15px;
   margin-top: 31px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+
+/*DOWNLOAD APP SECTION*/
+
+.download-app__container {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  background-image: url("../img/providers-img.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.download-app__info {
+  max-width: 370px;
+}
+
+.download-app__heading {
+  max-width: 255px;
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.download-app__text {
+  margin: 0;
+  margin-top: 31px;
+  margin-bottom: 15px;
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
