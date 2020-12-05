@@ -441,7 +441,7 @@ img {
 .download-app__container {
   padding-top: 70px;
   padding-bottom: 50px;
-  background-image: url("../img/providers-img.png");
+  background-image: url("../img/download-app-bg.png");
   background-repeat: no-repeat;
   background-position: right center;
 }
@@ -465,6 +465,26 @@ img {
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
+}
+
+.download-btn__text {
+  position: relative; 
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.download-btn__text::after {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  width: 10px;
+  height: 15px;
+  content: "";
+  right: 0;
+  background-image: url('../img/download-icon.svg');
+  background-size: contain;
+  background-position: center center;
 }
 
 /* MEDIA QUERIES */
@@ -495,6 +515,10 @@ img {
   .providers__container {
     background-size: 550px;
   }
+
+  .download-app__container {
+    background-size: 550px;
+  }
 }
 
 @media only screen and (max-width:960px) {
@@ -514,12 +538,26 @@ img {
     margin-bottom: 100px;
   }
 
+  .providers {
+    margin-bottom: 50px;
+  }
+
   .providers__container {
     padding-top: 450px;
     background-position: center top;
   }
 
   .providers__info {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .download-app__container {
+    padding-top: 450px;
+    background-position: center top;
+  }
+
+  .download-app__info {
     margin-left: auto;
     margin-right: auto;
   }
@@ -574,7 +612,7 @@ img {
     height: 100vh;
     text-align: center;
     background-color: #f1f1f1;
-    clip-path: circle(100px at 90% -25%);
+    clip-path: circle(0px at 90% -25%);
     transition: all 0.8s ease-out;
   }
 
@@ -625,7 +663,16 @@ img {
     max-width: 380px;
   }
 
+  .providers {
+    margin-bottom: 20px;
+  }
+
   .providers__container {
+    padding-top: 370px;
+    background-size: 400px;
+  }
+
+  .download-app__container {
     padding-top: 370px;
     background-size: 400px;
   }
@@ -674,7 +721,7 @@ img {
   }
 
   .providers__text {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-size: 16px;
     line-height: 25px;
   }
@@ -682,5 +729,27 @@ img {
   .hr {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .download-app__container {
+    padding-top: 270px;
+    background-size: 300px;
+  }
+
+  .download-app__info {
+    text-align: center;
+  }
+
+  .download-app__heading {
+    max-width: 100%;
+    margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .download-app__text {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 25px;
   }
 }
