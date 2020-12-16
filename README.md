@@ -1,3 +1,2 @@
-# trafalgar-clone
 The first website I created
-telegram: https://t.me/shuhratbeks_blog
+telegram blog: https://t.me/shuhratbeks_blog
