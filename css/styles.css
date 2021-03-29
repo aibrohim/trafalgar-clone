@@ -496,13 +496,36 @@ img {
 
 
 /* CUSTOMER SECTION */
+.customer {
+  margin-bottom: 225px;
+}
+
+.customer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .customer__slayd {
+  margin-bottom: 47px;
   position: relative;
   z-index: 1;
   padding: 64px 118px 118px 80px;
   background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
   border-radius: 24px;
+  color: #fff;
+}
+
+.customer__slayd::before {
+  position: absolute;
+  z-index: -2;
+  display: flex;
+  width: 135px;
+  height: 115px;
+  content: '';
+  left: -56px;
+  bottom: 35px;
+  background-image: url('../img/element.png');
 }
 
 .customer__slayd::after {
@@ -523,7 +546,6 @@ img {
   font-size: 36px;
   line-height: 48px;
   text-align: center;
-  color: #fff;
 }
 
 .hr-white {
@@ -540,12 +562,85 @@ img {
 }
 
 .left-wrapper {
+  margin-right: 110px;
+  width: 354px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+
+.customer__name {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  line-height: 48px
+}
+
+.customer__job {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 48px;
 }
 
 .customer-thought {
   max-width: 420px;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.buttons-group {
+  display: flex;
+  align-items: center;
+}
+
+.cricle-btn {
+  display: inline-block;
+  margin: 0 9px 0 9px;
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(91, 155, 243);
+  opacity: 0.3;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.cricle-btn:hover {
+  opacity: 1;
+}
+
+.active-btn {
+  background: #5B9BF3;
+  opacity: 1;
+}
+
+.slayd-btn {
+  display: inline-block;
+  width: 28px;
+  height: 18px;
+  border: none;
+  background: none;
+  background-image: url('../img/vector.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  cursor: pointer;
+  outline: none;
+}
+
+.left-slayd-btn {
+  margin-right: 90px;
+}
+
+.right-slayd-btn {
+  margin-left: 90px;
+  transform: rotate(180deg);
 }
 
 
