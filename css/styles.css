@@ -647,7 +647,13 @@ img {
 
 /* ARTICLE */
 .article {
+  position: relative;
+  z-index: 1;
   margin-bottom: 200px;
+  top: 10%;
+  background-image: url('../img/article_bg.png');
+  background-repeat: no-repeat;
+  background-position: right calc(50% - 285px) center;
 }
 
 .article__container {
@@ -693,6 +699,7 @@ img {
 
 .article__img {
   display: block;
+  border-radius: 20px 20px 0 0;
 }
 
 .article__item-info {
